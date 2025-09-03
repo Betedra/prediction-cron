@@ -10,7 +10,7 @@
     },
     {
       "path": "/api/updatePrice",
-      "schedule": "* * * * *"
+      "schedule": "*/2 * * * *"
     }
   ]
 }

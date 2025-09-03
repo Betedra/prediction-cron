@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import { NextResponse } from "next/server";
-const PythAbi = require("@pythnetwork/pyth-sdk-solidity/abis/IPyth.json");
+import PythAbi from "@pythnetwork/pyth-sdk-solidity/abis/IPyth.json";
 
 async function getLatestPrice() {
   const url =
@@ -81,3 +81,5 @@ export async function GET() {
     );
   }
 }
+
+// gh pr create --base main --head dev--title "Merge to main"

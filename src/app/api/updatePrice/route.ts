@@ -77,7 +77,7 @@ export async function GET() {
         message: "execution error",
         error: error instanceof Error ? error.message : String(error),
       },
-      { status: 200 } // Return 200 since request was successful, but processing failed
+      { status: 200 }
     );
   }
 }
